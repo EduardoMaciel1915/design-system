@@ -4,20 +4,23 @@ interface TextProps {
   size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
   asChild?: boolean;
+  className?: string;
 }
 
 interface HeadingProps {
   size?: 'sm' | 'md' | 'lg';
   children: React.ReactNode;
   asChild?: boolean;
+  className?: string;
 }
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   asChild?: boolean;
+  className?: string;
 }
 
-interface CheckboxProps {}
+interface LogoProps extends React.SVGAttributes<HTMLOrSVGElement> {}
 
 interface TextInputInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}

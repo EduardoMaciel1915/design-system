@@ -32,3 +32,8 @@ interface TextInputIconProps {
 interface TextInputRootProps extends React.DivHTMLAttributes<HTMLInputElement> {
   children: React.ReactNode;
 }
+
+interface RenderCondition {
+  children: React.ReactNode;
+  condition: boolean;
+}
